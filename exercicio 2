@@ -9,7 +9,10 @@ years = int(input("Digite o ano em que nasceu:"))
 ano = 2025
 suaidade = ano - years
 print("Você tem {} anos".format(suaidade))
-base = int(input("DIgite a base do retângulo:"))
-altura = int(input("Agora dgite a altura:"))
+base = int(input("Digite a base do retângulo:"))
+altura = int(input("Agora digite a altura:"))
 area = base * altura
 print("A área do retângulo é= {}cm".format(area))
+name = (input("Qual o seu nome? "))
+sob = (input("E sobrenome? "))
+print("{} {}".format(name,sob))
