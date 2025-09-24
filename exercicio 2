@@ -1,0 +1,7 @@
+x = int(input("Digite um número:"))
+y = int(input("Digite outro:"))
+soma = x + y
+subtracao = x - y
+multiplicacao = x * y
+divisao = x / y 
+print("A soma é ={}\nsubtração é ={}\nmultiplicação é ={}\ndivisão ={}\n".format(soma,subtracao,multiplicacao,divisao))
