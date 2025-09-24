@@ -8,7 +8,8 @@ print("A soma é ={}\nsubtração é ={}\nmultiplicação é ={}\ndivisão ={}\n
 years = int(input("Digite o ano em que nasceu:"))
 ano = 2025
 suaidade = ano - years
-print("Você tem {} anos".format(suaidade))base = int(input("DIgite a base do retângulo:"))
+print("Você tem {} anos".format(suaidade))
+base = int(input("DIgite a base do retângulo:"))
 altura = int(input("Agora dgite a altura:"))
 area = base * altura
 print("A área do retângulo é= {}cm".format(area))
