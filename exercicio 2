@@ -19,3 +19,13 @@ print("A área do retângulo é= {}cm".format(area))
 name = (input("Qual o seu nome? "))
 sob = (input("E sobrenome? "))
 print("{} {}".format(name,sob))
+
+cor = (input("Digite uma cor: "))
+if cor == 'verde':
+    print('Está na bandeira')
+elif cor == 'amarelo':
+        print('Está na bandeira')
+elif cor == 'azul':
+    print('Está na bandeira')
+else:
+    print('Não está na bandeira')
