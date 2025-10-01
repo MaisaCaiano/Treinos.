@@ -3,3 +3,11 @@ if num % 2 == 0:
     print('O número é par')
 else:
     print('impar')
+
+povo = (input("Diga o nome de um povo: "))
+if povo == "glib":
+    print("O glib habita o planeta Glibbia")
+elif povo == "warg":
+    print("O  wagr habita em warggia")
+else:
+    print("O mik habita o mikkia")
