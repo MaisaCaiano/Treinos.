@@ -1,13 +1,27 @@
-num = int(input("Digite um número: "))
+num = int(input("Digite um numero: "))
 if num % 2 == 0:
-    print('O número é par')
+    print("O numero é par")
 else:
-    print('impar')
+    print("O numero é ímpar")
 
-povo = (input("Diga o nome de um povo: "))
+povo = (input("Digite um povo: "))
 if povo == "glib":
-    print("O glib habita o planeta Glibbia")
+    print("Esse povo habita em Glibbia.")
 elif povo == "warg":
-    print("O  wagr habita em warggia")
+    print("Esse povo habita o planeta warggia.")
 else:
-    print("O mik habita o mikkia")
+    print("Esse povo habita o planeta Mikkia.")
+
+nome = int(input("Digite um numero do filho: "))
+if nome == 1:
+    print('O pirmeiro filho é Pimpilio')
+elif nome == 2:
+    print('O segundo filho é Florisbela')
+elif nome == 3:
+    print('O terceiro filho é zezeco')
+elif nome == 4:
+    print('O quarto filho é Nhonhoaldo')
+elif nome == 5:
+    print('O quinto filho é Gliceria')
+else:
+    print("O número digitado não corresponde a um filho da familia Bolseirinho
