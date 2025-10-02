@@ -24,4 +24,16 @@ elif nome == 4:
 elif nome == 5:
     print('O quinto filho é Gliceria')
 else:
-    print("O número digitado não corresponde a um filho da familia Bolseirinho
+    print("O número digitado não corresponde a um filho da familia Bolseirinho")
+
+idade = int(input("Digite a sua idade: "))
+if idade <0:
+    print('A idade digitada é invalida')
+elif idade <=12:
+    print('Criança')
+elif idade <=17:
+    print('Adolescente')
+elif idade <=59:
+    print('Adulto')
+else:
+    print('Idoso')
