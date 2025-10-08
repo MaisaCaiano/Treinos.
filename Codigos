@@ -20,23 +20,6 @@ elif nome == 2:
 elif nome == 3:
     print('O terceiro filho é zezeco')
 elif nome == 4:
-    print('O quarto filho é Nhonhoaldo')
-elif nome == 5:
-    print('O quinto filho é Gliceria')
-else:
-    print("O número digitado não corresponde a um filho da familia Bolseirinho")
-
-idade = int(input("Digite a sua idade: "))
-if idade <0:
-    print('A idade digitada é invalida')
-elif idade <=12:
-    print('Criança')
-elif idade <=17:
-    print('Adolescente')
-elif idade <=59:
-    print('Adulto')
-else:
-    print('Idoso')
 
 DESAFIO 
 valor = int(input("Digite o valor para sacar: "))
@@ -83,4 +66,39 @@ else:
             print(f"{ced5} nota(s) de R$5")
         if ced2 > 0:
             print(f"{ced2} nota(s) de R$2")
+
+
+usuario = input("Digite o usuario: ")
+senha = input("Digite a senha: ")
+if usuario == 'pythonio' and senha == 'python' or usuario == 'pytricia' and senha == '123456': 
+    print("Bem-vindo")
+else:
+    print("Autenticação inválida.")
+
+
+
+idade = int(input("Qual sua idade? "))
+study = input("Você é estudante? ")
+if idade <0:
+    print("A idade digitada está inválida")
+
+if idade <=12 and study == 'sim':
+    print("Criança estudante.")
+if idade <=12 and study == 'não':
+    print("Criança não estudante.")
+if idade <=17 and study == 'sim':
+    print("Adolescente estudante.")
+if idade <=17 and study == 'não':
+    print("Adolescente não estudante.")
+if idade <=59 and study == 'sim':
+    print("Adulto estudante.")
+if idade <=59 and study == 'não':
+    print("Adulto não estudante.")
+if idade >=60 and study == 'sim':
+    print("Idoso estudante.")
+if idade >=60 and study == 'não':
+    print("Idoso não estudante.")
+
+
+
 
