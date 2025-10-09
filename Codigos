@@ -77,28 +77,85 @@ else:
 
 
 
-idade = int(input("Qual sua idade? "))
-study = input("Você é estudante? ")
-if idade <0:
-    print("A idade digitada está inválida")
+idade = int(input("Qual a sua idade? "))
+study = input("Você é estudante? ") # sim / nao
 
-if idade <=12 and study == 'sim':
-    print("Criança estudante.")
-if idade <=12 and study == 'não':
-    print("Criança não estudante.")
-if idade <=17 and study == 'sim':
-    print("Adolescente estudante.")
-if idade <=17 and study == 'não':
-    print("Adolescente não estudante.")
-if idade <=59 and study == 'sim':
-    print("Adulto estudante.")
-if idade <=59 and study == 'não':
-    print("Adulto não estudante.")
-if idade >=60 and study == 'sim':
-    print("Idoso estudante.")
-if idade >=60 and study == 'não':
-    print("Idoso não estudante.")
+if 0 <= idade <= 12 and study == 'sim':
+    print('Criança estudante')
+elif 0 <= idade <= 12 and study == 'não':
+    print('Criança não estudante')
+elif 13 <= idade <= 17 and study == 'sim':
+    print('Adolescente estudante')
+elif 13 <= idade <= 17 and study == 'não':
+    print('Adolescente não estudante')
+elif 18 <= idade <= 59 and study == 'sim':
+    print('Adulto estudante')
+elif 18 <= idade <= 59 and study == 'não':
+    print('Adulto não estudante')
+elif idade >= 60 and study == 'sim':
+    print('Idoso estudante')
+elif idade >= 60 and study == 'não':
+    print('Idoso não estudante')
+else:
+    print('Entrada inválida')
 
 
+idade = int(input("Qual a sua idade? "))
+study = input("Você é estudante? ") # sim / nao
+rotulo = None
+study_s_n = None 
+
+if 0 <= idade <=12:
+    rotulo = 'Criança'
+elif 13 <= idade <= 17:
+    rotulo = 'Adolescente'
+elif 18 <= idade <= 59:
+    rotulo = 'Adulto'
+elif idade >= 60:
+    rotulo = 'idoso'
+
+if study == 'sim':
+    study_s_n = ""
+elif study == 'nao:':
+    study_s_n = ' nao'
+
+print(f"{rotulo}{study_s_n} estudante")
+
+acertou = False
+while not acertou:
+    senha = input("Qual é a senha? ")
+    if senha == 'meca':
+        print("Você acertou")
+        acertou = True
+    else:
+        print("Tente novamente")
+
+
+saida = False
+saldo = 0 
+while not saida: 
+    entrada = input("Dê uma entrada: ")
+
+    if entrada == "sair":
+        saida = True
+
+    elif entrada == "saldo":
+        print(f"R${saldo} ")
+
+    elif entrada == 'deposito':
+       valor = int(input("Qual o valor a ser depositado? "))
+    
+    if valor > 0:
+        saldo += valor
+        print(f"Deposito de R$ {valor} realizado")
+    else:
+        print("O valor deve ser maior que zero")
+
+    elif entrada == 'saque':
+        sacar = int(input("Qual o valor a ser sacado? "))
+    if sacar <= 0:
+     print()
+
+        
 
 
