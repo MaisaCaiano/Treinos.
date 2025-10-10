@@ -143,18 +143,16 @@ while not saida:
         print(f"R${saldo} ")
 
     elif entrada == 'deposito':
-       valor = int(input("Qual o valor a ser depositado? "))
-    
+        valor = int(input("Qual o valor a ser depositado? "))
     if valor > 0:
         saldo += valor
         print(f"Deposito de R$ {valor} realizado")
-    else:
-        print("O valor deve ser maior que zero")
 
     elif entrada == 'saque':
         sacar = int(input("Qual o valor a ser sacado? "))
-    if sacar <= 0:
-     print()
+    elif sacar <= 0:
+        saldo -= valor
+        print(f"R%{valor} restante")
 
         
 
