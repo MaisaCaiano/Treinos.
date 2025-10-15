@@ -131,29 +131,6 @@ while not acertou:
         print("Tente novamente")
 
 
-saida = False
-saldo = 0 
-while not saida: 
-    entrada = input("Dê uma entrada: ")
-
-    if entrada == "sair":
-        saida = True
-
-    elif entrada == "saldo":
-        print(f"R${saldo} ")
-
-    elif entrada == 'deposito':
-        valor = int(input("Qual o valor a ser depositado? "))
-    if valor > 0:
-        saldo += valor
-        print(f"Deposito de R$ {valor} realizado")
-
-    elif entrada == 'saque':
-        sacar = int(input("Qual o valor a ser sacado? "))
-    elif sacar <= 0:
-        saldo -= valor
-        print(f"R%{valor} restante")
-
         
 
 
